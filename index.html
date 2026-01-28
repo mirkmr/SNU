@@ -15,13 +15,17 @@
 <body>
     <header>
         <div class="container header-container">
-            <div class="logo">SNU안과</div>
+            <div class="logo">SNU안과 <span style="font-size: 0.6em; font-weight: 300; color: #666;">운영 전략 제안서</span>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#executive-summary">Executive Summary</a></li>
-                    <li><a href="#">Strategic Focus</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#hero">홈</a></li>
+                    <li><a href="#executive-summary">핵심 제안</a></li>
+                    <li><a href="#strategic-focus">운영 전략 방향</a></li>
+                    <li><a href="#five-layers">상세 서비스</a></li>
+                    <li><a href="#pricing">견적 및 조건</a></li>
+                    <li><a href="#action-plan">세부 일정</a></li>
+                    <li><a href="#closing">약속</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +47,7 @@
         <section id="executive-summary">
             <div class="container">
                 <div class="section-header">
-                    <h2>0. Executive Summary : 제안의 핵심</h2>
+                    <h2>제안의 핵심</h2>
                     <p class="section-intro">
                         본 제안은 SNU안과의 유튜브 채널을 단순한 영상 저장소가 아닌,<br>
                         실제 환자가 유입되는 병원의 핵심 마케팅 엔진으로 전환하는 프로젝트입니다.<br><br>
@@ -74,12 +78,12 @@
         <section id="strategic-focus">
             <div class="container">
                 <div class="section-header">
-                    <h2>1. 운영 전략 방향 (Strategic Focus)</h2>
+                    <h2>운영 전략 방향</h2>
                 </div>
 
                 <!-- 1-1. Premium Long-form -->
                 <div class="strategy-block" id="strategy-1-1">
-                    <h3 class="strategy-title">1-1. 고관여 의료 시장의 본질에 집중한 '고밀도 롱폼' 전략</h3>
+                    <h3 class="strategy-title">고관여 의료 시장의 본질에 집중한 '고밀도 롱폼' 전략</h3>
                     <div class="split-layout">
                         <div class="text-content">
                             <p class="main-desc">
@@ -97,20 +101,20 @@
                             <div class="shorts-box">
                                 <h4>쇼츠의 역할 (Teaser Only)</h4>
                                 <p>쇼츠를 위한 별도의 기획이나 촬영은 하지 않습니다. 철저히 본편(롱폼)으로 유입시키기 위한 '예고편' 역할로만 제한하여, 휘발성 조회수가 아닌 진성
-                                    시청자를 확보하는 도구로 활용합니다.</p>
+                                    시청자를 확보하는 도구로 활용합니다.<br><br>단 분석탭을 통해 쇼츠의 단순 조회수만 급증하여 메인 롱폼 영상의 노출 기회를 잠식한다고 분석될 경우
+                                    쇼츠 배포를 즉시 중단합니다. 이는 허수 시청자로 인해 채널의 환자 전환율이 떨어지는 것을 방지하기 위한 고도화된 운영 전략입니다.</p>
                             </div>
                         </div>
-                        <div class="image-placeholder">
-                            <div class="placeholder-content">
-                                <span>High Density<br>Long-form Video</span>
-                            </div>
+                        <div class="video-frame-container" id="video-container">
+                            <img src="thumbnail.jpg" alt="Video Thumbnail" class="video-thumbnail">
+                            <div class="play-button"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 1-2. 3 Key Contents (Accordion) -->
                 <div class="strategy-block" id="strategy-1-2">
-                    <h3 class="strategy-title">1-2. 타겟의 행동을 이끄는 3대 핵심 콘텐츠</h3>
+                    <h3 class="strategy-title">타겟의 행동을 이끄는 3대 핵심 콘텐츠</h3>
                     <p class="strategy-intro">
                         5060세대의 시청 패턴과 심리를 분석하여, 실제 병원 내원과 문의로 직결되는 3가지 유형의 콘텐츠 제작에 집중합니다.
                     </p>
@@ -154,7 +158,7 @@
 
                 <!-- 1-3. Dual Channel Strategy -->
                 <div class="strategy-block" id="strategy-1-3">
-                    <h3 class="strategy-title">1-3. 안과 시장 장악을 위한 '듀얼 채널(Dual Channel)' 전략</h3>
+                    <h3 class="strategy-title">안과 시장 장악을 위한 '듀얼 채널' 전략</h3>
                     <p class="strategy-intro">
                         현재 운영 중인 SNU안과 공식 채널과 정의상 원장님 개인 채널을 전략적으로 활용하여 시장 내 영향력을 극대화합니다.
                     </p>
@@ -193,129 +197,179 @@
         <section id="five-layers">
             <div class="container">
                 <div class="section-header">
-                    <h2>2. 핵심 서비스 상세 5-Layer Solution</h2>
+                    <h2>핵심 서비스 상세</h2>
                 </div>
 
                 <div class="timeline">
                     <!-- Layer 1 -->
-                    <div class="timeline-item">
+                    <!-- Layer 1 -->
+                    <div class="timeline-item layer-accordion-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="layer-badge">Layer 1</span>
-                            <h3>Production : 의료진의 시간을 아껴주는 '원스톱 시스템'</h3>
-                            <p class="layer-intro">가장 큰 부담인 기획, 대본, 편집은 전문가가 전담하고, 의료진은 오직 '설명'에만 집중할 수 있는 최적의 환경을
-                                제공합니다.</p>
+                            <div class="layer-header-container">
+                                <h3><span class="layer-badge-btn">LAYER 1</span> 의료진의 시간을 아껴주는 '원스톱 시스템' <span
+                                        class="layer-toggle-icon">+</span></h3>
+                            </div>
+                            <div class="layer-body">
+                                <p class="layer-intro">가장 큰 부담인 기획, 대본, 편집은 전문가가 전담하고, 의료진은 오직 '설명'에만 집중할 수 있는 최적의 환경을
+                                    제공합니다.</p>
 
-                            <div class="detail-box">
-                                <h4>촬영 스트레스 제로 (3+3 로테이션)</h4>
-                                <p>의료진이 가장 기피하는 '장시간 촬영'을 원천 차단합니다. 월 2회 방문, 한 번에 두 분의 원장님이 각각 3편씩(1시간 이내) 촬영하는 고효율
-                                    시스템으로 진료 스케줄 간섭을 최소화합니다.</p>
-                            </div>
-                            <div class="detail-box">
-                                <h4>의료 특화 1인칭 스토리텔링</h4>
-                                <p>인위적인 문답 형식이 아닌, 진료실에서 환자에게 설명하듯이 '몰입형 1인 화법'을 적용하여 의료진의 전문성과 신뢰도를 영상에 온전히 담아냅니다.</p>
-                            </div>
-                            <div class="detail-box">
-                                <h4>빈틈없는 세이브(Save) 시스템</h4>
-                                <p>매월 12편(공식 8+개인 4)을 안정적으로 제작하며, 특히 런칭 전 최소 4주 분량의 영상을 미리 확보하여 학회나 휴가 등 돌발 변수에도 휴재 없는
-                                    무결점 운영을 보장합니다.</p>
+                                <div class="detail-box">
+                                    <h4>촬영 스트레스 제로 (3+3 로테이션)</h4>
+                                    <p>의료진이 가장 기피하는 '장시간 촬영'을 원천 차단합니다. 월 2회 방문, 한 번에 두 분의 원장님이 각각 3편씩(1시간 이내) 촬영하는 고효율
+                                        시스템으로 진료 스케줄 간섭을 최소화합니다.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>의료 특화 1인칭 스토리텔링</h4>
+                                    <p>인위적인 문답 형식이 아닌, 진료실에서 환자에게 설명하듯이 '몰입형 1인 화법'을 적용하여 의료진의 전문성과 신뢰도를 영상에 온전히 담아냅니다.
+                                    </p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>빈틈없는 세이브(Save) 시스템</h4>
+                                    <p>매월 12편(공식 8+개인 4)을 안정적으로 제작하며, 특히 런칭 전 최소 4주 분량의 영상을 미리 확보하여 학회나 휴가 등 돌발 변수에도 휴재
+                                        없는
+                                        무결점 운영을 보장합니다.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Layer 2 -->
-                    <div class="timeline-item">
+                    <!-- Layer 2 -->
+                    <div class="timeline-item layer-accordion-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="layer-badge">Layer 2</span>
-                            <h3>Traffic : 126만 구독자 '트래픽 부스팅'</h3>
-                            <p class="layer-intro">유튜브 성장의 가장 큰 난관인 '초기 노출 부족'을 <span
-                                    class="highlight-number">126만</span> 건나물TV와의 전략적 연동으로 즉시 해결합니다.</p>
-
-                            <div class="detail-box">
-                                <h4>검증된 타겟 직결 (Targeting)</h4>
-                                <p>건나물TV의 '공동 작업자' 기능을 활용하여, 건강 고관여층인 126만 구독자 피드에 SNU안과 영상을 직접 배달합니다. 맨땅에 헤딩하는 것이 아닌,
-                                    이미 모여있는 잠재 고객의 안방을 공략하는 확정적 도달 전략입니다.</p>
+                            <div class="layer-header-container">
+                                <h3><span class="layer-badge-btn">LAYER 2</span> 126만 구독자 '트래픽 부스팅' <span
+                                        class="layer-toggle-icon">+</span></h3>
                             </div>
-                            <div class="detail-box">
-                                <h4>월 840만 원 상당의 비용 절감 (Benefit)</h4>
-                                <p>편당 70만 원인 유료 콜라보 기능을 월 12편 전량 무상 지원합니다. 이는 매월 <span class="highlight-number">840만
-                                        원</span>, 연간 <span class="highlight-number">1억 원</span> 이상의 광고비를 아끼는 효과이며, 단순
-                                    조회수 광고(애드센스) 대비 5배 이상의 구매 전환 가치를 창출합니다.</p>
+                            <div class="layer-body">
+                                <p class="layer-intro">유튜브 성장의 가장 큰 난관인 '초기 노출 부족'을 <span
+                                        class="highlight-number">126만</span> 건나물TV와의 전략적 연동으로 즉시 해결합니다.</p>
+
+                                <div class="detail-box">
+                                    <h4>검증된 타겟 직결 (Targeting)</h4>
+                                    <p>건나물TV의 '공동 작업자' 기능을 활용하여, 건강 고관여층인 126만 구독자 피드에 SNU안과 영상을 직접 배달합니다. 맨땅에 헤딩하는 것이
+                                        아닌,
+                                        이미 모여있는 잠재 고객의 안방을 공략하는 확정적 도달 전략입니다.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>월 840만 원 상당의 비용 절감 (Benefit)</h4>
+                                    <p>편당 70만 원인 유료 콜라보 기능을 월 12편 전량 무상 지원합니다. 이는 매월 <span class="highlight-number">840만
+                                            원</span>, 연간 <span class="highlight-number">1억 원</span> 이상의 광고비를 아끼는 효과이며,
+                                        단순
+                                        조회수 광고(애드센스) 대비 5배 이상의 구매 전환 가치를 창출합니다.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Layer 3 -->
-                    <div class="timeline-item">
+                    <!-- Layer 3 -->
+                    <div class="timeline-item layer-accordion-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="layer-badge">Layer 3</span>
-                            <h3>Expansion : 126만 본채널 등판 '프리미엄 브랜딩'</h3>
-                            <p class="layer-intro">우리끼리만 아는 채널이 아닌, 대한민국 대표 건강 채널에 등판하여 브랜드의 '급'을 높입니다.</p>
-
-                            <div class="detail-box">
-                                <h4>연 8회 메인 채널 단독 송출</h4>
-                                <p>격월로 진행되는 기획 브랜딩 영상(6편)과 하이라이트 통합본(2편)을 건나물TV 메인 채널에 정기적으로 업로드합니다. 단순한 신생 채널이 아닌, 대형
-                                    채널이 보증하는 병원이라는 권위를 부여합니다.</p>
+                            <div class="layer-header-container">
+                                <h3><span class="layer-badge-btn">LAYER 3</span> 126만 건나물TV 출연 '프리미엄 브랜딩' <span
+                                        class="layer-toggle-icon">+</span></h3>
                             </div>
-                            <div class="detail-box">
-                                <h4>6,400만 원 상당의 마케팅 혜택</h4>
-                                <p>타 병원 및 제약회사 광고 집행 시 편당 800만 원이 소요되는 유료 구좌를 <span class="highlight-number">연 8회</span>
-                                    무상으로 제공받는 파격적인 조건입니다. SNU안과의 인지도를 단기간에 폭발시키는 가장 강력한 기폭제가 될 것입니다.</p>
+                            <div class="layer-body">
+                                <p class="layer-intro">우리끼리만 아는 채널이 아닌, 대한민국 대표 건강 채널에 등판하여 브랜드의 '급'을 높입니다.</p>
+
+                                <div class="detail-box">
+                                    <h4>연 8회 메인 채널 단독 송출</h4>
+                                    <p>격월로 진행되는 기획 브랜딩 영상(6편)과 하이라이트 통합본(2편)을 건나물TV 메인 채널에 정기적으로 업로드합니다. 단순한 신생 채널이 아닌,
+                                        대형
+                                        채널이 보증하는 병원이라는 권위를 부여합니다.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>6,400만 원 상당의 마케팅 혜택</h4>
+                                    <p>타 병원 및 제약회사 광고 집행 시 편당 800만 원이 소요되는 유료 구좌를 <span class="highlight-number">연
+                                            8회</span>
+                                        무상으로 제공받는 파격적인 조건입니다. SNU안과의 인지도를 단기간에 폭발시키는 가장 강력한 기폭제가 될 것입니다.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Layer 4 -->
-                    <div class="timeline-item">
+                    <!-- Layer 4 -->
+                    <div class="timeline-item layer-accordion-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="layer-badge">Layer 4</span>
-                            <h3>Conversion : 구매 전환을 만드는 '자가체크 구독 시스템'</h3>
-                            <p class="layer-intro">영상을 보고 감탄하는 것에 그치지 않고, 시청자가 직접 참여하여 실제 예약과 내원으로 이어지도록 설계된 'IT 구독
-                                서비스'를 제안합니다.</p>
+                            <div class="layer-header-container">
+                                <h3><span class="layer-badge-btn">LAYER 4</span> 새로운 유입경로 설계 '자가체크 구독 시스템' <span
+                                        class="layer-toggle-icon">+</span></h3>
+                            </div>
+                            <div class="layer-body">
+                                <p class="layer-intro">영상을 보고 감탄하는 것에 그치지 않고, 시청자가 직접 참여하여 실제 예약과 내원으로 이어지도록 설계된 'IT 구독
+                                    서비스'를 제안합니다.</p>
 
-                            <div class="detail-box">
-                                <h4>매월 1개, 신규 '증상 체크리스트(Checklist)' 페이지 제작</h4>
-                                <p>시청자가 자신의 증상을 직접 체크해보고 내원 필요성을 스스로 느낄 수 있는 '반응형 체크리스트'를 매월 1개씩 신규 개발하여 제공합니다.</p>
-                            </div>
-                            <div class="detail-box">
-                                <h4>끊김 없는 환자 유입 설계 (Funnel)</h4>
-                                <p>[영상 시청] → [더보기란 링크 클릭] → [내 눈 상태 체크] → [결과 확인 및 상담 신청]으로 이어지는 유입 경로를 설계합니다. 가장 확실한 DB
-                                    확보 전략입니다.</p>
-                            </div>
-                            <div class="detail-box">
-                                <h4>합리적인 IT 구독 모델 (Monthly Subscription)</h4>
-                                <p>매월 새로운 체크리스트 도구와 랜딩페이지가 병원의 자산으로 누적되는 구조이며, 월 300만 원(VAT 별도)의 합리적인 구독료로 진행 가능합니다.</p>
-                            </div>
+                                <div class="detail-box">
+                                    <h4>매월 1개, 신규 '증상 체크리스트(Checklist)' 페이지 제작</h4>
+                                    <p>시청자가 자신의 증상을 직접 체크해보고 내원 필요성을 스스로 느낄 수 있는 '반응형 체크리스트'를 매월 1개씩 신규 개발하여 제공합니다.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>끊김 없는 환자 유입 설계 (Funnel)</h4>
+                                    <p>[영상 시청] → [더보기란 링크 클릭] → [내 눈 상태 체크] → [결과 확인 및 상담 신청]으로 이어지는 유입 경로를 설계합니다. 가장
+                                        확실한 DB
+                                        확보 전략입니다.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>합리적인 IT 구독 모델 (Monthly Subscription)</h4>
+                                    <p>매월 새로운 체크리스트 도구와 랜딩페이지가 병원의 자산으로 누적되는 구조이며, 월 300만 원(VAT 별도)의 합리적인 구독료로 진행 가능합니다.
+                                    </p>
+                                </div>
 
-                            <button id="start-diagnosis-btn" class="cta-button">백내장 자가진단 체험하기</button>
+                                <button id="start-diagnosis-btn" class="cta-button">백내장 자가진단 체험하기</button>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Layer 5 -->
-                    <div class="timeline-item">
+                    <!-- Layer 5 -->
+                    <div class="timeline-item layer-accordion-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="layer-badge">Layer 5</span>
-                            <h3>Offline : 서울 핵심 상권 '전광판 장악'</h3>
-                            <p class="layer-intro">온라인의 인지도를 오프라인으로 확장하여 신뢰도에 정점을 찍습니다.</p>
-
-                            <div class="detail-box">
-                                <h4>서울 핵심 요지 점유</h4>
-                                <p>유동 인구가 가장 많은 강남대로, 명동, 서울대입구 등 당사가 직접 보유한 대형 전광판에 브랜딩 영상을 송출합니다. 타사 대비 거품 없는 합리적인
-                                    조건으로 서울 주요 거점을 SNU안과의 홍보판으로 활용할 수 있습니다.</p>
+                            <div class="layer-header-container">
+                                <h3><span class="layer-badge-btn">LAYER 5</span> 서울 핵심 상권 '전광판 활용' <span
+                                        class="layer-toggle-icon">+</span></h3>
                             </div>
-                            <div class="detail-box">
-                                <h4>온-오프라인 연결 (O2O)</h4>
-                                <p>단순 병원명 노출이 아닌, "궁금증은 유튜브에서 확인하세요"와 같은 메시지를 통해 오프라인 유동 인구를 다시 유튜브 채널로 유입시키는 선순환 구조를
-                                    만듭니다.</p>
-                            </div>
+                            <div class="layer-body">
+                                <p class="layer-intro">온라인의 인지도를 오프라인으로 확장하여 신뢰도에 정점을 찍습니다.</p>
 
-                            <div class="image-placeholder map-placeholder">
-                                <div class="placeholder-content">
-                                    <span>Key Locations Map<br>(Gangnam, Myeongdong, SNU Station)</span>
+                                <div class="detail-box">
+                                    <h4>서울 핵심 요지 점유</h4>
+                                    <p>유동 인구가 가장 많은 강남대로, 명동, 서울대입구 등 당사가 직접 보유한 대형 전광판에 브랜딩 영상을 송출합니다. 타사 대비 거품 없는 합리적인
+                                        조건으로 서울 주요 거점을 SNU안과의 홍보판으로 활용할 수 있습니다.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4>온-오프라인 연결 (O2O)</h4>
+                                    <p>단순 병원명 노출이 아닌, "궁금증은 유튜브에서 확인하세요"와 같은 메시지를 통해 오프라인 유동 인구를 다시 유튜브 채널로 유입시키는 선순환
+                                        구조를
+                                        만듭니다.</p>
+                                </div>
+
+                                <div class="map-container relative-container">
+                                    <img src="map-001.png" alt="서울 주요 상권 지도" class="map-image">
+                                    <!-- Hotspot 1: SNU (South) -->
+                                    <button class="hotspot-btn" data-img="서울대-001.png" style="top: 81%; left: 20%;">
+                                        <span class="pulse-ring"></span>
+                                        <span class="btn-text">서울대입구 +</span>
+                                    </button>
+
+                                    <!-- Hotspot 2: Myeong-dong (North) -->
+                                    <button class="hotspot-btn" data-img="명동 회현사거리-001.png"
+                                        style="top: 33%; left: 23%;">
+                                        <span class="pulse-ring"></span>
+                                        <span class="btn-text">명동 +</span>
+                                    </button>
+
+                                    <!-- Hotspot 3: Gangnam (East/Center) -->
+                                    <button class="hotspot-btn" data-img="강남대로-001.png" style="top: 74%; left: 78%;">
+                                        <span class="pulse-ring"></span>
+                                        <span class="btn-text">강남대로 +</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -329,7 +383,7 @@
         <section id="pricing">
             <div class="container">
                 <div class="section-header">
-                    <h2>3. 견적 및 계약 조건 (Pricing and Terms)</h2>
+                    <h2>견적 및 계약 조건</h2>
                     <p class="section-intro">
                         단순한 영상 제작 대행이 아닙니다.<br>
                         유튜브를 통해 병원의 매출 구조를 바꾸고 브랜드의 체급을 키우는 <strong>24개월 비즈니스 파트너십</strong> 제안입니다.
@@ -385,7 +439,8 @@
                         <div class="option-box">
                             <h4>Option B. 서울 주요 상권 전광판</h4>
                             <p>강남, 명동, 서울대입구 등 당사 보유 매체 송출</p>
-                            <span class="option-price">비용 별도 협의</span>
+                            <span class="option-price">SNU안과에서 진행시 <span class="special-discount">특별할인가</span>로
+                                제공됩니다</span>
                         </div>
                     </div>
                     <div class="terms-column right-col">
@@ -396,11 +451,15 @@
                             <p>채널 트래픽으로 발생하는 구글 애드센스 광고 수익 전액</p>
                         </div>
                         <div class="profit-box">
-                            <h4>2. 외부 광고 및 협찬 수익</h4>
+                            <h4>2. 채널 연계 광고 수익</h4>
                             <div class="profit-ratio">
                                 <span class="hosp">병원 70%</span> : <span class="agency">당사 30%</span>
                             </div>
-                            <p>채널 영향력 확대로 발생하는 외부 수익 배분</p>
+                            <p>유튜브 채널 영향력 확대로 인해 영상 내에 유치되는 PPL(간접광고) 및 브랜디드 콘텐츠 수익에 한하여 배분합니다.<br>
+                                <span style="font-size: 0.9em; color: #888; display: block; margin-top: 5px;">(유튜브 채널과
+                                    무관한 의료진의 개인 외부 활동, 방송 출연, 오프라인 강연료 등은 배분 대상에서
+                                    제외됩니다.)</span>
+                            </p>
                         </div>
                         <div class="contract-period">
                             계약 기간: <strong>24개월</strong> (진성 구독자 확보 기간)
@@ -414,14 +473,14 @@
         <section id="action-plan">
             <div class="container">
                 <div class="section-header">
-                    <h2>4. 초기 세부 실행 일정 (Action Plan)</h2>
+                    <h2>초기 세부 실행 일정</h2>
                     <p class="section-intro">채널의 안정적인 운영을 위해 '선 제작 후 송출' 프로세스를 원칙으로 합니다.</p>
                 </div>
 
                 <div class="process-bar">
                     <div class="process-step">
                         <div class="step-icon">01</div>
-                        <h3>Phase 1. 준비</h3>
+                        <h3>사전 준비</h3>
                         <span class="step-time">D-30</span>
                         <ul>
                             <li>기존 채널 운영 이관 및 설정 최적화</li>
@@ -429,9 +488,9 @@
                         </ul>
                     </div>
                     <div class="process-arrow"></div>
-                    <div class="process-step active-step">
+                    <div class="process-step">
                         <div class="step-icon">02</div>
-                        <h3>Phase 2. 런칭</h3>
+                        <h3>운영 전환</h3>
                         <span class="step-time">1개월 차</span>
                         <ul>
                             <li>주 3회 정기 업로드 개시</li>
@@ -441,7 +500,7 @@
                     <div class="process-arrow"></div>
                     <div class="process-step">
                         <div class="step-icon">03</div>
-                        <h3>Phase 3. 안착</h3>
+                        <h3>안정화</h3>
                         <span class="step-time">2개월 차 ~</span>
                         <ul>
                             <li>데이터 기반 기획 고도화</li>
@@ -455,7 +514,7 @@
         <!-- 5. Closing Promise -->
         <section id="closing">
             <div class="container closing-content">
-                <h2>5. 건나물TV만이 할 수 있는 약속</h2>
+                <h2>건나물TV만이 할 수 있는 약속</h2>
                 <div class="promise-text">
                     <p>고민할 이유는 없습니다. 저희는 이미 모든 것을 갖추고 있기 때문입니다.</p>
                     <p>다른 대행사가 "어떻게 알릴까"를 고민하며 시간을 허비할 때,<br>
@@ -501,8 +560,16 @@
             </div>
         </div>
 
+        <!-- Image Detail Modal (New) -->
+        <div id="image-modal" class="modal-overlay">
+            <div class="image-modal-container">
+                <button class="close-image-modal">&times;</button>
+                <img src="서울대-001.png" alt="서울대입구 전광판 상세" class="detail-popup-image">
+            </div>
+        </div>
+
         <script>
-            // --- Accordion Logic ---
+            // --- Accordion Logic (Strategic Focus) ---
             document.querySelectorAll('.accordion-header').forEach(button => {
                 button.addEventListener('click', () => {
                     const accordionItem = button.parentElement;
@@ -514,6 +581,32 @@
 
                     if (!isActive) {
                         accordionItem.classList.add('active');
+                    }
+                });
+            });
+
+            // --- Layer Accordion Logic (5-Layer Solution) ---
+            document.querySelectorAll('.layer-header-container').forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.parentElement.parentElement; // .timeline-item.layer-accordion-item
+                    const isActive = item.classList.contains('active');
+
+                    // If you want to allow only one open at a time, uncomment below:
+                    document.querySelectorAll('.layer-accordion-item').forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
+
+                    if (!isActive) {
+                        item.classList.add('active');
+                    } else {
+                        // Allow collapsing if clicking the same one (and we support collapsing)
+                        // But if we cleared all above, !isActive is true only if it wasn't active.
+                        // Wait, if I cleared all above, item.classList.remove('active') happened.
+                        // So I need to store initial state before clearing.
+                        // Actually, the simple logic is:
+                        // 1. Check if CURRENT is active.
+                        // 2. Remove active from ALL.
+                        // 3. If CURRENT was NOT active, add active.
                     }
                 });
             });
@@ -609,6 +702,54 @@
                     resultDesc.innerText = "현재 백내장 의심 증상은 보이지 않습니다. 정기 검진을 통해 눈 건강을 지키세요!";
                     resultIcon.innerText = "✨";
                 }
+            }
+
+
+            // --- Image Modal Logic (Hotspot) ---
+            // --- Image Modal Logic (Dynamic Hotspots) ---
+            const imageModal = document.getElementById('image-modal');
+            const detailImage = imageModal.querySelector('.detail-popup-image');
+            const closeImageModalBtn = document.querySelector('.close-image-modal');
+            const hotspotBtns = document.querySelectorAll('.hotspot-btn');
+
+            // Open Modal with specific image
+            hotspotBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const imgSrc = this.getAttribute('data-img');
+                    if (imgSrc) {
+                        detailImage.src = imgSrc;
+                        imageModal.classList.add('open');
+                    }
+                });
+            });
+
+            // Close Logic
+            if (closeImageModalBtn) {
+                closeImageModalBtn.addEventListener('click', () => {
+                    imageModal.classList.remove('open');
+                });
+            }
+
+            // Close on outside click
+            if (imageModal) {
+                imageModal.addEventListener('click', (e) => {
+                    if (e.target === imageModal) {
+                        imageModal.classList.remove('open');
+                    }
+                });
+            }
+            // --- Video Loader (YouTube) ---
+            const videoContainer = document.getElementById('video-container');
+            if (videoContainer) {
+                videoContainer.addEventListener('click', function () {
+                    // Using standard YouTube embed with compatibility parameters
+                    this.innerHTML = `
+                        <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/JhhpJnujKXM?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div style="text-align: center; margin-top: 10px;">
+                            <a href="https://youtu.be/JhhpJnujKXM" target="_blank" style="color: #666; font-size: 14px; text-decoration: underline;">영상 재생이 안 되나요? 유튜브에서 직접 보기 ></a>
+                        </div>
+                    `;
+                });
             }
         </script>
     </main>
