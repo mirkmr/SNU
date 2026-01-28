@@ -601,22 +601,21 @@
                     const item = header.parentElement.parentElement; // .timeline-item.layer-accordion-item
                     const isActive = item.classList.contains('active');
 
-                    // If you want to allow only one open at a time, uncomment below:
+                    // Update: Re-enabled exclusive mode (one open at a time) to keep UI tidy.
+                    // Added auto-scroll to prevent the "jump up" issue when content above collapses.
                     document.querySelectorAll('.layer-accordion-item').forEach(otherItem => {
                         otherItem.classList.remove('active');
                     });
 
                     if (!isActive) {
                         item.classList.add('active');
+                        // Scroll to this item after a short delay to let the layout shift finish
+                        setTimeout(() => {
+                            item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 350); // Slightly longer than CSS transition (usually 0.3s)
                     } else {
-                        // Allow collapsing if clicking the same one (and we support collapsing)
-                        // But if we cleared all above, !isActive is true only if it wasn't active.
-                        // Wait, if I cleared all above, item.classList.remove('active') happened.
-                        // So I need to store initial state before clearing.
-                        // Actually, the simple logic is:
-                        // 1. Check if CURRENT is active.
-                        // 2. Remove active from ALL.
-                        // 3. If CURRENT was NOT active, add active.
+                        // Allow toggling closed
+                        item.classList.remove('active');
                     }
                 });
             });
