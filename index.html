@@ -743,10 +743,13 @@
             if (videoContainer) {
                 videoContainer.addEventListener('click', function () {
                     // Using standard YouTube embed with compatibility parameters
+                    // Wrapped in a div to prevent flexbox from squishing the text into a vertical column on the right
                     this.innerHTML = `
-                        <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/JhhpJnujKXM?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div style="text-align: center; margin-top: 10px;">
-                            <a href="https://youtu.be/JhhpJnujKXM" target="_blank" style="color: #666; font-size: 14px; text-decoration: underline;">영상 재생이 안 되나요? 유튜브에서 직접 보기 ></a>
+                        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                            <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/JhhpJnujKXM?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="text-align: center; margin-top: 10px;">
+                                <a href="https://youtu.be/JhhpJnujKXM" target="_blank" style="color: #666; font-size: 14px; text-decoration: underline;">영상 재생이 안 되나요? 유튜브에서 직접 보기 ></a>
+                            </div>
                         </div>
                     `;
                 });
